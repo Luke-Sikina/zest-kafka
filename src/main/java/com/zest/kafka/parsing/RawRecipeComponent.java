@@ -1,3 +1,5 @@
 package com.zest.kafka.parsing;
 
-public record RawRecipeComponent(String ingredient, String unit, float quantity) {}
+import com.zest.kafka.discovery.RecipeLink;
+
+public record RawRecipeComponent(String ingredient, String unit, float quantity, RecipeLink recipe) {}

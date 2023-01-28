@@ -1,4 +1,6 @@
 package com.zest.kafka.parsing;
 
-public record HarmonizedRecipeComponent(String ingredient, float grams) {
+import com.zest.kafka.discovery.RecipeLink;
+
+public record HarmonizedRecipeComponent(String ingredient, float grams, RecipeLink recipe) {
 }
